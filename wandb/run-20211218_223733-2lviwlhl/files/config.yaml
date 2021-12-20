@@ -1,0 +1,154 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.6
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: lr-SGD
+      5: 1
+      6:
+      - 1
+    - 1: lr-SGD-momentum
+      5: 1
+      6:
+      - 1
+    - 1: train\.acc
+      5: 1
+      6:
+      - 1
+    - 1: train\.loss
+      5: 1
+      6:
+      - 1
+    - 1: train\.loss_ema
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+    python_version: 3.8.5
+    start_time: 1639863453
+    t:
+      1:
+      - 1
+      - 9
+      3:
+      - 13
+      4: 3.8.5
+      5: 0.12.6
+      8:
+      - 2
+      - 5
+accelerator:
+  desc: null
+  value: dp
+augmix:
+  desc: null
+  value:
+    mixture_depth: -1
+    mixture_width: 3
+    no_jsd: false
+    severity: 1
+cc_dir:
+  desc: null
+  value: /scratch/197419682.tmpdir/imagenet100c
+color_jit:
+  desc: null
+  value:
+    T: 0.05
+    cut: 500
+    max_freqs: 20
+data_dir:
+  desc: null
+  value: /scratch/197419682.tmpdir/imagenet100
+dataset:
+  desc: null
+  value: imagenet100
+debug:
+  desc: null
+  value: false
+diffeo:
+  desc: null
+  value:
+    alpha: 1.0
+    cutmax: 500
+    cutmin: 2
+    rT: 1.0
+    rcut: 1.0
+    sT: 1.0
+    scut: 1.0
+enable_aug:
+  desc: null
+  value:
+    color_jit: true
+    diffeo: true
+    rand_filter: true
+epochs:
+  desc: null
+  value: 100
+grad_clip:
+  desc: null
+  value: 0.5
+log_freq:
+  desc: null
+  value: 50
+lr_schedule:
+  desc: null
+  value:
+    epochs: 100
+    max_lr: 0.2
+    pct_start: 0.25
+    steps_per_epoch: 391
+model:
+  desc: null
+  value:
+    name: efficientnet_b0
+    pretrained: false
+optimizer:
+  desc: null
+  value:
+    lr: 0.2
+    momentum: 0.9
+    nesterov: true
+    weight_decay: 1.0e-05
+rand_filter:
+  desc: null
+  value:
+    kernel_size: 3
+    sigma: 4.0
+save_dir:
+  desc: null
+  value: /cluster/scratch/rarade/common_corruptions/PRIME/effb0_in100_augmix/
+scheduler_t:
+  desc: null
+  value: cyclic
+test_batch_size:
+  desc: null
+  value: 512
+test_num_workers:
+  desc: null
+  value: 8
+train_batch_size:
+  desc: null
+  value: 256
+train_num_workers:
+  desc: null
+  value: 8
+use_augmix:
+  desc: null
+  value: true
+use_deepaugment:
+  desc: null
+  value: false
+use_prime:
+  desc: null
+  value: false

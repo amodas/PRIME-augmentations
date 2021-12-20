@@ -1,0 +1,22 @@
+{
+    "os": "Linux-3.10.0-1160.45.1.el7.x86_64-x86_64-with-glibc2.2.5",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-12-18T16:01:48.300661",
+    "startedAt": "2021-12-18T16:01:46.677592",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 8,
+    "cpu_count": 128,
+    "cuda": null,
+    "args": [
+        "--config=config/cifar100_cfg.py",
+        "--config.use_prime=False",
+        "--config.use_augmix=True"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "host": "eu-g3-009",
+    "username": "rarade",
+    "executable": "/cluster/home/rarade/torch/bin/python"
+}

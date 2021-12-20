@@ -1,0 +1,21 @@
+{
+    "os": "Linux-3.10.0-1160.45.1.el7.x86_64-x86_64-with-glibc2.2.5",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-12-19T12:45:33.381205",
+    "startedAt": "2021-12-19T12:45:31.805381",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 2,
+    "cpu_count": 128,
+    "cuda": null,
+    "args": [
+        "--config=config/cifar100_cfg.py",
+        "--config.save_dir=/cluster/scratch/rarade/common_corruptions/PRIME/c100_prime_06/"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "host": "eu-g3-046",
+    "username": "rarade",
+    "executable": "/cluster/home/rarade/torch/bin/python"
+}

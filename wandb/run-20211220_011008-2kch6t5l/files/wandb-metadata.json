@@ -1,0 +1,26 @@
+{
+    "os": "Linux-3.10.0-1160.45.1.el7.x86_64-x86_64-with-glibc2.2.5",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-12-20T00:10:11.094397",
+    "startedAt": "2021-12-20T00:10:08.264838",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 8,
+    "cpu_count": 128,
+    "cuda": null,
+    "args": [
+        "--config=config/imagenet100_cfg.py",
+        "--config.save_dir=/cluster/scratch/rarade/common_corruptions/PRIME/wrn_in100_da/",
+        "--config.use_prime=False",
+        "--config.use_deepaugment=True",
+        "--config.model.name=wrn_40_2",
+        "--config.epochs=33",
+        "--config.lr_schedule.epochs=33"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "host": "eu-g3-040",
+    "username": "rarade",
+    "executable": "/cluster/home/rarade/torch/bin/python"
+}
