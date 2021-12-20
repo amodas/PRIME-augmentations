@@ -1,0 +1,14 @@
+absl-py==0.15.0
+einops==0.3.2
+flatten-dict==0.4.2
+kornia==0.6.1
+matplotlib==3.4.3
+ml-collections==0.1.0
+numpy==1.19.5
+opencv-python==4.5.4.60
+opt-einsum==3.3.0
+Pillow==8.4.0
+pytorch-lightning==1.4.9
+torch==1.9.1+cu111
+torchvision==0.10.1+cu111
+tqdm==4.56.2
