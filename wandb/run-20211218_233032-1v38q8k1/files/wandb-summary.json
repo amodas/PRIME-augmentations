@@ -1,1 +1,0 @@
-{"lr-SGD": 0.000968943142078689, "lr-SGD-momentum": 0.9491200878016735, "trainer/global_step": 749, "_runtime": 256, "_timestamp": 1639866888, "_step": 30, "train.acc": 0.02734375, "train.loss": 4.542238235473633, "epoch": 1, "val.acc": 0.009999999776482582, "_wandb": {"runtime": 262}}
