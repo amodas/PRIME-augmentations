@@ -3,6 +3,9 @@ wandb/
 __pycache__/
 *.py[cod]
 *$py.class
+**/*__pycache__/
+**/*.pyc
+**/*.ipynb_checkpoints/
 
 # C extensions
 *.so
