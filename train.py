@@ -224,7 +224,7 @@ def main(_):
     # Evaluation on common corruptions
     dataset_c = get_cc_dataset(config.dataset)(
         config.cc_dir, batch_size=config.test_batch_size,
-        num_workers=config.test_num_workers,
+        num_workers=config.test_num_workers
     )
     transforms = [] if 'cifar' in config.dataset else [T.ToTensor()]
     transforms.append(T.Normalize(dataset.mean, dataset.std))

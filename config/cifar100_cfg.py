@@ -51,10 +51,10 @@ def get_config():
     config.diffeo.scut = 1.
     config.diffeo.rcut = 1.
     config.diffeo.cutmin = 2
-    config.diffeo.cutmax = 200
+    config.diffeo.cutmax = 100
     config.diffeo.alpha = 1.0
 
-    config.color_jit.cut = 200
+    config.color_jit.cut = 100
     config.color_jit.T = 0.01
     config.color_jit.max_freqs = None
 
