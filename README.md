@@ -1,6 +1,6 @@
 # PRIME: A Few Primitives Can Boost Robustness to Common Corruptions
 
-This is the official repository of PRIME, the data agumentation method introduced in the paper: [*"PRIME: A Few Primitives Can Boost Robustness to Common Corruptions"*](https://google.com). PRIME is a generic, plug-n-play data augmentation scheme that consists of simple families of max-entropy image transformations for conferring robustness to common corruptions. PRIME leads to significant improvements in corruption robustness on multiple benchmarks. 
+This is the official repository of PRIME, the data agumentation method introduced in the paper: [*"PRIME: A Few Primitives Can Boost Robustness to Common Corruptions"*](https://arxiv.org/abs/2112.13547). PRIME is a generic, plug-n-play data augmentation scheme that consists of simple families of max-entropy image transformations for conferring robustness to common corruptions. PRIME leads to significant improvements in corruption robustness on multiple benchmarks. 
 <p align="center">
     <img src="misc/prime-augmentations.png"/>
 </p>
@@ -56,4 +56,10 @@ Results on CIFAR-10/100 with a ResNet-18
 ## Citing this work
 
 ```
+@article{PRIME2021,
+    title = {PRIME: A Few Primitives Can Boost Robustness to Common Corruptions}, 
+    author = {Apostolos Modas and Rahul Rade and Guillermo {Ortiz-Jim\'enez} and Seyed-Mohsen {Moosavi-Dezfooli} and Pascal Frossard},
+    year = {2021},
+    journal = {arXiv preprint arXiv:2112.13547}
+}
 ```
