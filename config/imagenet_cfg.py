@@ -17,15 +17,15 @@ def get_config():
     
     # Dataset
     config.dataset = 'imagenet'
-    config.data_dir = '/cluster/scratch/rarade/data/imagenet/'
-    config.cc_dir = '/cluster/scratch/rarade/data/imagenetc/'
+    config.data_dir = './data/imagenet/'
+    config.cc_dir = './data/imagenetc/'
     config.train_batch_size = 256 * num_gpus
     config.test_batch_size = 512 * num_gpus
     config.train_num_workers = 36
     config.test_num_workers = 36
 
     # Model
-    config.save_dir = '/cluster/scratch/rarade/common_corruptions/PRIME/in_prime/'
+    config.save_dir = './PRIME/in_prime/'
     config.model.name = 'resnet50'
     config.model.pretrained = True    
     config.accelerator = 'dp'

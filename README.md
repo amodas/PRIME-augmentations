@@ -1,6 +1,6 @@
 # PRIME: A Few Primitives Can Boost Robustness to Common Corruptions
 
-This is the official repository of PRIME, the data agumentation method introduced in the paper: [*"PRIME: A Few Primitives Can Boost Robustness to Common Corruptions"*](https://arxiv.org/abs/2112.13547). PRIME is a generic, plug-n-play data augmentation scheme that consists of simple families of max-entropy image transformations for conferring robustness to common corruptions. PRIME leads to significant improvements in corruption robustness on multiple benchmarks. 
+This is the official repository of PRIME, the data agumentation method introduced in the paper: [*"PRIME: A Few Primitives Can Boost Robustness to Common Corruptions"*](https://arxiv.org/abs/2112.13547). PRIME is a generic, plug-n-play data augmentation scheme that consists of simple families of max-entropy image transformations for conferring robustness against common corruptions. PRIME leads to significant improvements in corruption robustness on multiple benchmarks. 
 <p align="center">
     <img src="misc/prime-augmentations.png"/>
 </p>
@@ -27,25 +27,26 @@ $ python -u train.py --config=config/imagenet_cfg.py \
     --config.cc_dir=<common_corr_dir> \
     --config.use_prime=True
 ```
-Detailed configuration options can be found in [`config`](config/).
+Detailed configuration options for all the datasets can be found in [`config`](config/).
 
 ## Results
 
 Results on ImageNet/ImageNet-100 with a ResNet-50/ResNet-18 (&dagger;: without JSD loss)
-| Dataset | Method | &nbsp;&nbsp;Clean (&#8593;) | CC Acc (&#8593;) | &nbsp;&nbsp;&nbsp;mCE (&#8595;) |
-|---|---|---:|---:|---:|
+| Dataset | Method | &nbsp;Clean &#8593;&nbsp; | CC Acc &#8593; | &nbsp;&nbsp;mCE &#8595;&nbsp; |
+|:---:|---|:---:|:---:|:---:|
 | ImageNet | Standard | 76.1 | 38.1 | 76.1 |
 | ImageNet | AugMix | 77.5 | 48.3 | 65.3 |
 | ImageNet | DeepAugment | 76.7 | 52.6 | 60.4 |
 | ImageNet | PRIME&dagger; | 77.0 | **55.0** | **57.5** |
-| ImageNet-100 | Standard | 88.0 | 49.7 | 100 |
+| ImageNet | PRIME | 75.3 | **56.4** | **55.5** |
+| ImageNet-100 | Standard | 88.0 | 49.7 | 100.0 |
 | ImageNet-100 | AugMix | 88.7 | 60.7 | 79.1 |
 | ImageNet-100 | DeepAugment | 86.3 | 67.7 | 68.1 |
 | ImageNet-100 | PRIME | 85.9 | **71.6** | **61.0** |
 
 Results on CIFAR-10/100 with a ResNet-18
-| Dataset&nbsp;&nbsp;&nbsp; | Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;Clean (&#8593;) | CC Acc (&#8593;) | &nbsp;&nbsp;&nbsp;mCE (&#8595;) |
-|---|---|---:|---:|---:|
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dataset&nbsp;&nbsp;&nbsp;&nbsp; | Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;Clean &#8593; | CC Acc &#8593;&nbsp; | &nbsp;&nbsp;mCE &#8595;&nbsp; |
+|:---:|---|:---:|:---:|:---:|
 | CIFAR-10 | Standard | 95.0 | 74.0 | 24.0 |
 | CIFAR-10 | AugMix | 95.2 | 88.6 | 11.4 |
 | CIFAR-10 | PRIME | 93.1 | **89.0** | **11.0** |

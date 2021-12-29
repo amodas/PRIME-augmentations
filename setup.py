@@ -21,6 +21,8 @@ def copy(in_file, out_dir):
     return 1
     
 def _setup(data_dir, name='train'):
+    print (f'Setting up {name}.')
+    
     dataset = os.path.basename(os.path.normpath(data_dir))
     if os.path.isfile(os.path.join(data_dir, f'{name}.zip')):
         data_file = os.path.join(data_dir, f'{name}.zip')
@@ -46,11 +48,9 @@ def _setup(data_dir, name='train'):
         os.remove(os.path.join(tmp_dir, f'{name}.tar'))
 
 def setup_train(data_dir):
-    print ('Setting up training dataset.')
     _setup(data_dir, 'train')
     
 def setup_val(data_dir):
-    print ('Setting up validation dataset.')
     _setup(data_dir, 'val')
 
 
@@ -58,7 +58,6 @@ _CORRUPTIONS = ['noise', 'blur', 'weather', 'digital']
 
 def setup_corruptions(data_dir, corruptions=_CORRUPTIONS):
     for corr in corruptions:
-        print (f'Setting up {corr} corruptions.')
         _setup(data_dir, corr)
          
 def setup_all(data_dir, cc_dir):

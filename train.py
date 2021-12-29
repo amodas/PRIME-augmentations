@@ -35,6 +35,9 @@ from utils.prime import PRIMEAugModule
 from setup import setup_all, _setup
 
 
+_WANDB_USERNAME = "username"
+_WANDB_PROJECT = "common-corruptions"
+
 def validate_config(cfg):
     if cfg.dataset not in _DATASETS:
         raise ValueError(f'Dataset {cfg.dataset} not supported!')
@@ -58,7 +61,7 @@ def main(_):
     validate_config(config)
     
     wandb.init(
-        project="common-corruptions", entity="rsrade",
+        project=_WANDB_PROJECT, entity=_WANDB_USERNAME,
         name=config.save_dir.split('/')[-2],
         settings=wandb.Settings(_disable_stats=True),
     )
@@ -194,7 +197,7 @@ def main(_):
 
     
     # PL trainer & logging
-    wandb_logger = WandbLogger(project="common-corruptions", entity="rsrade", log_model=False)
+    wandb_logger = WandbLogger(project=_WANDB_PROJECT, entity=_WANDB_USERNAME, log_model=False)
     lr_monitor = LearningRateMonitor(logging_interval="step", log_momentum=True)
     checkpoint_callback = ModelCheckpoint(
         config.save_dir, filename='best', 

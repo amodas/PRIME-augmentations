@@ -15,15 +15,15 @@ def get_config():
     
     # Dataset
     config.dataset = 'cifar10'
-    config.data_dir = '/cluster/scratch/rarade/data/cifar10/'
-    config.cc_dir = '/cluster/scratch/rarade/data/cifar10c/'
+    config.data_dir = './data/cifar10/'
+    config.cc_dir = './data/cifar10c/'
     config.train_batch_size = 128
     config.test_batch_size = 256
     config.train_num_workers = 4
     config.test_num_workers = 4
 
     # Model
-    config.save_dir = '/cluster/scratch/rarade/common_corruptions/PRIME/c10_prime/'
+    config.save_dir = './PRIME/c10_prime/'
     config.model.name = 'resnet18'
     config.model.pretrained = False    
     config.accelerator = 'dp'
