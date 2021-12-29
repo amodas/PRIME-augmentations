@@ -45,7 +45,7 @@ Results on ImageNet/ImageNet-100 with a ResNet-50/ResNet-18 (&dagger;: without J
 | ImageNet-100 | PRIME | 85.9 | **71.6** | **61.0** |
 
 Results on CIFAR-10/100 with a ResNet-18
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dataset&nbsp;&nbsp;&nbsp;&nbsp; | Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;Clean &#8593; | CC Acc &#8593;&nbsp; | &nbsp;&nbsp;mCE &#8595;&nbsp; |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dataset&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;Clean &#8593; | CC Acc &#8593;&nbsp; | &nbsp;&nbsp;mCE &#8595;&nbsp; |
 |:---:|---|:---:|:---:|:---:|
 | CIFAR-10 | Standard | 95.0 | 74.0 | 24.0 |
 | CIFAR-10 | AugMix | 95.2 | 88.6 | 11.4 |
