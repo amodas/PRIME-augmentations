@@ -57,10 +57,10 @@ Results on CIFAR-10/100 with a ResNet-18
 ## Citing this work
 
 ```
-@article{PRIME2021,
+@inproceedings{PRIME2022,
     title = {PRIME: A Few Primitives Can Boost Robustness to Common Corruptions}, 
     author = {Apostolos Modas and Rahul Rade and Guillermo {Ortiz-Jim\'enez} and Seyed-Mohsen {Moosavi-Dezfooli} and Pascal Frossard},
-    year = {2021},
-    journal = {arXiv preprint arXiv:2112.13547}
+    year = {2022},
+    booktitle = {European Conference on Computer Vision (ECCV)}
 }
 ```
